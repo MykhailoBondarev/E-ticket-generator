@@ -43,7 +43,7 @@
     .right-inline {text-align: right; }
     div.rules { width: 50%; }
     div.place, .place_location { font-size: 16px; padding-bottom: 0px; }
-    .place_location > div { margin-right: 40px; }
+    .place_location > div { margin-right: 20px; }
     /*div.place { padding-bottom: 5px; }*/
     div.place_address, .place_price, .place_owner, .place_passport { font-size: 16px; padding-bottom: 3px; }
     div.control { font-size: 16px; }
@@ -60,7 +60,7 @@
     .bottom_inf  div { float: left; }
 
     .bottom_inf div.control { width: 35%; }
-    .bottom_inf div.small_inf { width: 45%; }
+    .bottom_inf div.small_inf { width: 43%; padding-left: 10px; }
     .bottom_inf div.tn { width: 20%; text-align: center; }
     div.small_inf div.activity_name { font-size: 15px; white-space: pre-line; float: none;}
     div.small_inf div.place, div.small_inf .place_location { font-size: 11px; float: none; /*padding-bottom: 3px;*/ }
@@ -75,10 +75,12 @@
     .poster_img {/*max-width: 210px;*/ max-width: 180px; width: 100%; position: absolute; z-index:1; right: 0;}
     .information_holder { width: 50%; position: relative; }
     .rules_holder, .forbidden, .bottom_inf, .footer { width: 100%; }
+    .rules_holder { padding-top: 10px; }
     .small_inf > .activity_name { height: auto; }
     .control img {
         max-width: 170px;
         width: 100%;
+        padding-right: 10px;
     }
 
     .InviteTrue, .InviteFalse {
@@ -131,7 +133,7 @@ div.capitals{
             <div class="activity_name"><?php print_r($activity_name); ?></div>
             <div class="place" style="padding-bottom: 2px;"><?php echo $event_date.' '.$event_city;  ?></div>
             <div class="place"><?php echo $event_address ?></div>
-            <div class="place_location"><table style="margin-left: -2px; font-family: MyriadProRegular;"><tr><td>Сектор/Sector: <?php echo $event_sector; ?></td></tr>
+            <div class="place_location"><table style="margin-left: -2px; font-family: MyriadProRegular; font-size: 14px;"><tr><td>Сектор/Sector: <?php echo $event_sector; ?></td></tr>
                 <tr>
                     <?php
                         if ($event_row!='' || $event_place!='') {
