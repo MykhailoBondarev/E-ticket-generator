@@ -131,10 +131,10 @@
             <label for="event_date">Дата, час заходу:</label>
             <input type="datetime-local" name="event_date" class="date-picker" required>
         </div>
-<!--         <div>
+        <div>
             <label for="event_address">Місто:</label>
             <input type="text" name="event_city" class="sml">
-        </div> -->
+        </div>
         <div>
             <label for="event_address">Адреса проведення:</label>
             <input type="text" name="event_address" required>
