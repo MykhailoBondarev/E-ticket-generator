@@ -108,6 +108,12 @@
     input[value="multi-mode"]:checked ~ div.multi-content {
         display: block;
     }
+    .example {
+        text-underline-position: under;
+        color: #fb2603;
+        background: #7fbd1d45;
+        font-weight: bold;
+    }
 </style>
 <body>
     <form method="post" action="invite_template" enctype='multipart/form-data'>
@@ -125,10 +131,10 @@
             <label for="event_date">Дата, час заходу:</label>
             <input type="datetime-local" name="event_date" class="date-picker" required>
         </div>
-        <div>
+<!--         <div>
             <label for="event_address">Місто:</label>
             <input type="text" name="event_city" class="sml">
-        </div>
+        </div> -->
         <div>
             <label for="event_address">Адреса проведення:</label>
             <input type="text" name="event_address" required>
@@ -167,7 +173,8 @@
         <div class="multi-content">
             <div>
                 <label for="event_img_link">Оберіть список квитків:</label>
-                <input type="file" name="ticketlistfile" accept=".csv" class="file-picker">            
+                <input type="file" name="ticketlistfile" accept=".csv" class="file-picker">
+                <a class="example" href="files/example.csv" download="example.csv">Приклад CSV файлу</a>            
             </div>
         </div>
         <button action="submit">OK</button>

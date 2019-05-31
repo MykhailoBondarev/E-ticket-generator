@@ -166,9 +166,8 @@ function ticketTemplateCache() {
         }
         echo "<p>Прочитано $rows_num квитків</p>";       
         fclose($csv_file);
-        unlink($ticketlistfile);        
-        include './templates/resultpage.php';
-
+        unlink($ticketlistfile);
+        
         foreach ($rows as $row) {
             $event_sector=$row[0];
             $event_row=$row[1];
