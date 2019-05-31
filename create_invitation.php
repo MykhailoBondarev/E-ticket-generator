@@ -174,7 +174,7 @@
             <div>
                 <label for="event_img_link">Оберіть список квитків:</label>
                 <input type="file" name="ticketlistfile" accept=".csv" class="file-picker">
-                <a class="example" href="files/example.csv" download="example.csv">Приклад CSV файлу</a>            
+                <a class="example" href="example/example.csv" download="example.csv">Приклад CSV файлу</a>            
             </div>
         </div>
         <button action="submit">OK</button>
