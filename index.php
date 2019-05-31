@@ -43,8 +43,8 @@
     		-webkit-animation-name: movein;
     		animation-duration: 2s;
     		-webkit-animation-duration: 2s;	
-    		bottom: 75px; 
-
+    		bottom: 200px; 
+    		display: block;
 		}
 
 		.arrow-up {
@@ -53,6 +53,7 @@
 			left: 47%;
 			max-width: 100px;
 			width: 100%; 
+			display: none;
 		}
 
 		@keyframes pulse {
@@ -62,10 +63,10 @@
 		}
 
 		@keyframes movein {
-			0% { opacity: 0; bottom: -1000px; }
-			25% { opacity: 1; bottom: 75px; }
-			50% { opacity: 1; bottom: 50px; }
-			100% { opacity: 1; bottom: 75px; }
+			0% { display: none; bottom: -1000px; }
+			25% { display: block; bottom: 200px; }
+			50% { bottom: 170px; }
+			100% { bottom: 200px; }
 		}		
 	</style>
 	<div>
